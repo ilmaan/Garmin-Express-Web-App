@@ -1,0 +1,275 @@
+body {
+    background-color: gainsboro;
+}
+
+.navbar {
+    /* position: fixed; */
+}
+
+.con1 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+body {
+    background: #00b4db;
+    background: -webkit-linear-gradient(to bottom, #0083b0, #00b4db);
+    background: linear-gradient(to bottom, #0083b0, #00b4db);
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+}
+
+#glass {
+    /* --- the magic --- */
+    color: rgb(255, 255, 255, 0.4);
+    background-color: rgb(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 25px;
+    border: 1.5px solid rgb(255, 255, 255, 0.18);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    /* ----------------- */
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 80vw;
+    /* height: 70vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bolder {
+    font-weight: 500;
+}
+
+.larger {
+    font-size: 1em;
+    margin: 0.5rem;
+    font-weight: 400;
+}
+
+
+/* a pattern to go under the glass and show the effect */
+
+#pattern-bg {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: top left;
+    background-size: cover;
+    background-color: black;
+    /* bg from https://bgjar.com/ */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1106%26quot%3b)' fill='none'%3e%3cpath d='M53.34225724386007 829.2274576362743L310.10914589989466 750.7259417914447-25.15925860096946 572.4605689802397z' fill='rgba(116%2c 218%2c 173%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M787.384771139078 885.1572152049371L870.0471651995217 699.4944383262189 550.2218028512226 668.3322356749125z' fill='rgba(116%2c 218%2c 173%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M919.9590175736698 223.82961744538363L1144.3266296525114 369.83984122759654 1160.6500785469582 136.40364642961774z' fill='rgba(116%2c 218%2c 173%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1476.79 482.29 a259.5 259.5 0 1 0 519 0 a259.5 259.5 0 1 0 -519 0z' fill='rgba(116%2c 218%2c 173%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1307.369668236632 150.512889204619L1381.3996019911783 278.7364957484513 1536.7200449296538 103.57979184471566z' fill='rgba(116%2c 218%2c 173%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M65.34 407.46 a230.38 230.38 0 1 0 460.76 0 a230.38 230.38 0 1 0 -460.76 0z' fill='rgba(116%2c 218%2c 173%2c 1)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1106'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 5vh;
+    }
+    .larger {
+        font-size: 10vh;
+        margin: 0.5rem;
+        font-weight: 400;
+    }
+}
+
+.nerdy-pen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* height: 100vh; */
+}
+
+.nerdy-pen__text {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 1em 2em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.fill:hover,
+.fill:focus {
+    box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.pulse:hover,
+.pulse:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+    }
+}
+
+.close:hover,
+.close:focus {
+    box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+.raise:hover,
+.raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+
+.up:hover,
+.up:focus {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.slide:hover,
+.slide:focus {
+    box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+.offset {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+
+.offset:hover,
+.offset:focus {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.fill {
+    --color: #a972cb;
+    --hover: #cb72aa;
+}
+
+.pulse {
+    --color: #ef6eae;
+    --hover: #ef8f6e;
+}
+
+.close {
+    --color: #ff7f82;
+    --hover: #ffdc7f;
+}
+
+.raise {
+    /* --color: #ffa260; */
+    --hover: #e5ff60;
+}
+
+.up {
+    --color: #e4cb58;
+    --hover: #94e458;
+}
+
+.slide {
+    --color: #8fc866;
+    --hover: #66c887;
+}
+
+.offset {
+    --color: #19bc8b;
+    --hover: #1973bc;
+}
+
+button {
+    color: var(--color);
+    transition: 0.25s;
+}
+
+button:hover,
+button:focus {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+code {
+    color: #e4cb58;
+    font: inherit;
+}
+
+
+/* var */
+
+::selection {
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+
+/* */
+
+body {
+    background: #222222;
+    background-image: url('https://c.wallhere.com/photos/52/f2/navigation_satellite_landmark_map_road-613392.jpg!d');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-weight: lighter;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+
+/* glass-block */
+
+.glass-block {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    margin-top: 70px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.glass-block {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px) saturate(150%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.6s;
+}
+
+.glass-block:hover {
+    backdrop-filter: blur(3px) saturate(500%);
+    transition: all 0.6s;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.7);
+}

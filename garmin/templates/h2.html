@@ -1,0 +1,1076 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Google Font Links-->
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
+
+        <!-- ADDED CSS FILES -->
+        <link rel="stylesheet" type="text/css" href="{% static 'web/invite_modal.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'web/invite_modal.css' %}">
+        <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/integratedmodule.css' %}"> -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/newd.css' %}">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        </style>
+        <link rel="stylesheet" type="text/css" href="{% static 'web/sharebuttons.css' %}">
+
+
+        <!-- ADDED CSS CDN -->
+        <!-- FOR NAVBAR -->
+
+
+        <!-- ADDED SCRIPTS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <!-- GOOGLE ADS SCRIPT -->
+        <script data-ad-client="ca-pub-2216946796152262" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+        <!-- FOR NAVBAR -->
+
+        <title>Simplifying Banking For NRIs| SBNRI</title>
+        <link rel="shortcut icon" href="{% static 'images/sbnrilogo.png' %}" type="image/x-icon">
+
+
+    </head>
+</head>
+
+<body>
+
+
+
+
+    <div class="popupchat">
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {},
+                Tawk_LoadStart = new Date();
+            (function() {
+                var s1 = document.createElement("script"),
+                    s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/60486bf11c1c2a130d66e1c0/1f0debab5';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+    </div>
+    <!-- END TO CHAT SCRIPT -->
+    <!--  MODAL INCLUDED-main1-->
+    <!-- {% include 'web/main1.html' %} -->
+    {% include 'web/invite_modal2.html' %}
+    <!-- NAVBAR RESPONSIVE -->
+    <!-- BUTTER BAR -->
+    <div class="gt-header-butterbar" style="transform: translate(0px, 0px);">
+        <p class="butter-text">{{ btext.btext }}<a class="butter-link" href=" {{ btext.blink }}">Download Now </a></p>
+
+    </div>
+    <!-- BUTTER BAR ENDS -->
+    <div class="navblue" style="margin-top: 3%;">
+        <header>
+            <nav class="container navbar">
+                <div class="logo animatable bounceInLeft">
+                    <a href="/">
+                        <picture>
+                            <source media="(min-width:1000px)" srcset="{% static 'images/Group.svg' %}" alt="Company Logo">
+                            <source media="(min-width:200px)" srcset="{% static 'images/Groupm.svg' %}" alt="Company Logo">
+                            <img src="img_orange_flowers.jpg" alt="logo" style="width:auto;">
+                        </picture>
+                    </a>
+                    <!-- <img class="logo" src="{% static 'images/Group.png' %}" alt="Company Logo"> -->
+                </div>
+                <a class="togglebtn" href="#"><span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span></a>
+                <div class="navbar-links animatable fadeInDown">
+                    <ul>
+                        <li class="nav-item"><a href="https://sbnri.com/blog/">Blog</a></li>
+                        <li class="nav-item"><a href="https://www.linkedin.com/company/sbnri-nribanking/jobs/">Hiring</a></li>
+                        <li class="nav-item"><a href="https://sbnri.com/about-us">About Us</a></li>
+                        <li class="nav-item " id="mobil-menu"><a href="#toplans"><button
+                  class="btn-primary getacc">Plans</button></a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content modalforapp">
+                    <div class="modal-header" style="border-bottom: 0px;">
+                        <h5 class="modal-title" id="exampleModalLabel">Account Opening is <br> only available on mobile</h5>
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6 " style="border-right: 2px solid #e9ecef;">
+                                <a href="https://sbnriapp.page.link/main_site"><img class="" src="{% static 'images/modaltab2.svg' %}"></a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="https://sbnriapp.page.link/main_site"><img class="" src="{% static 'images/modaltab1.svg' %}" style="margin-top: 30px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="border-top: 0px;">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- AFTER NAVBAR -->
+        <div class="container bluerect">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="con-left-title animatable fadeInDown">
+                        <h1>Apply for NRI account <br> digitally in<span class="pinktext"> 10 minutes</span></h1>
+
+                        <ul class="con-left-check">
+                            <li>Apply for NRI account digitally in 10 minutes*</li>
+                            <li>Remit money and book tax-free FDs up to 7%* interest</li>
+                            <li>24*7 availability of experts for your India related queries</li>
+                            <li>End-to-end management of all services related to India</li>
+                        </ul>
+                        <!-- FORM REPLACED FOR APP LINKS -->
+                        <div class="applinkes" id="applinker" style="display: none;">
+                            <a href="https://sbnriapp.page.link/main_site">
+                                <a href="https://sbnriapp.page.link/main_site"><img class="applink" src="{% static 'images/appstore.svg' %}"></a>
+                                <a href="https://sbnriapp.page.link/main_site"><img class="applink" src="{% static 'images/googleplay.svg' %}"></a>
+                            </a>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button id="openaccount" type="button" class="btn btn-primary getac " data-toggle="modal" data-target="#exampleModal">
+  Open Account Now
+</button>
+
+
+                        <!-- <div class="liveline">
+                      <p><span class="pinktext"><img class="blink" src="{% static 'images/liveb.svg' %}"> <span class="city-count"></span></span> Download The App Now <span class="pinktext"></span> </p>
+                  </div> -->
+
+
+                        <!-- <form action="" class="email-form" method="post" class="forminline">
+                       {% csrf_token %}
+                    <div class="row">
+                        
+                        <div class="col-md-7">
+                            <input class="inpute" type="email"  id="email1" placeholder="Enter e-mail ID " name="email" > 
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" id="Submit" class="getac btn-primary btn">Get Link</button>
+                    </div>
+                    </div>
+                    <div class="liveline">
+
+                      <p><span class="pinktext"><img class="blink" src="{% static 'images/liveb.svg' %}"> <span class="city-count">{{ people_count }}</span></span> NRIs from <span class="pinktext">30{{ cities_available.length }} cities</span> already joined the waitlist.</p>
+                  </div>
+                    </form>   -->
+                    </div>
+                </div>
+                <!-- <img class="dotbl" src="{% static 'images/Bluedot.png' %}">
+                -->
+
+                <div class="col-md-6 animatable moveUp "><img class="rotato" src="{% static 'images/RotatoSnapshot1.svg' %}">
+                    <img class="dot2" src="{% static 'images/dot2.svg' %}">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHO ARE WE PAGE -->
+    <img class="dot3" src="{% static 'images/dot3.svg' %}">
+    <img class="dot1" src="{% static 'images/backgrundots.png' %}">
+
+    <div class="container">
+        <div class="whorwe animatable bounceIn">
+            <h2>Who we are?</h2>
+            <h5 class="weare">A<span class="fintech"> Fintech Company<br></span> helping NRIs solve their India related tasks
+            </h5>
+            <div class="row pic3">
+                <div class="col-sm-12  ">
+                    <img class="group1" src="{% static 'images/Group 36.png' %}">
+                </div>
+            </div>
+        </div>
+        <!-- WHO ARE WE PAGE ENDS -->
+        <!-- PAGE 3 TWO PICS -->
+        <div class="row feat2">
+            <div class="col-md-6 feat21 animatable bounceInLeft">
+                <div class="twobox">
+                    <img class="feat20" src="{% static 'images/circleperc.svg' %}">
+                    <h5>Backed by Strong team</h5>
+                    <p>A celebrated start up launched by Ex-entrepreneurs, Ex- NRI Bankers and backed by VCs</p>
+                    <!-- <a href="https://sbnri.com/about-us">Know the team</a> -->
+                </div>
+                <!-- <a ><img class="feat20" src="{% static 'images/Group21.png' %}" ></a> -->
+            </div>
+            <div class="col-md-6 feat21 animatable bounceInLeft">
+                <div class="twobox">
+                    <img class="feat20" src="{% static 'images/circleperc.svg' %}">
+                    <h5>Transparency at its core</h5>
+                    <p>A banking marketplace for
+                        <br> NRIs ensuring complete transparency</p>
+                    <!-- <a href="https://sbnri.com/disclaimer">Know more</a> -->
+                </div>
+                <!-- <a><img class="feat20" src="{% static 'images/Group22.png' %}"  ></a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 3 ENDS -->
+    <!-- PAGE 4 WE PROVIDE -->
+
+    <!-- <div class="row"> -->
+    <!-- <div class="col-md-6"> -->
+    <div class="container weprovide">
+        <h2>We provide</h2>
+        <h5><span>24*7 </span>support for all your queries in India</h5>
+        <div class="con2-left-title">
+            <ul class="con-left-check conli">
+                <li>Opening accounts in India with any bank</li>
+                <li>Investments in India (FD, Stocks, Mutual Funds, or any other financial instruments) </li>
+                <li>Tax and Legal advisory </li>
+                <li>Conversion of existing accounts and repatriation</li>
+                <li>Buying and Selling Property in India</li>
+                <li>Job opportunities in India</li>
+                <li>Loan requirements </li>
+                <li>Senior care services</li>
+            </ul>
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- <div class="col-md-6">
+                <img class="featch" src="{% static 'images/GroupChat.png' %}" >
+            </div> -->
+    <!-- </div> -->
+
+    <!-- PAGE 4 WE PROVIDE ENDS -->
+    <!-- PAGE 5  -->
+    <!-- <div class="scrollhead">
+        <h6>NRI Banking for future generation</h6>
+    </div>    
+    <div class="scroll-container">
+        <section>
+          <img class="featrs3" src="{% static 'images/RotatoSnapshot3.png' %}" >
+          <img class="featrs3" src="{% static 'images/scrollt1.png' %}" >
+        </section>
+        <section>
+          <img class="featrs3" src="{% static 'images/scrolli2.png' %}" >
+          <img class="featrs3" src="{% static 'images/scrollt2.png' %}" >>
+        </section>
+        <section>
+          <img class="featrs3" src="{% static 'images/scrolli1.png' %}" >
+          <img class="featrs3" src="{% static 'images/scrollt3.png' %}" >
+        </section>
+        
+      </div> -->
+
+    <!-- PAGE 5 ENDS -->
+
+    <!-- NEW IN PAGE SCROLLER DESIGN -->
+
+    <h4 class="nbfg">NRI Banking for future generation</h4>
+    <div class="hovertabs container">
+
+
+
+        <div id="tab1" class="tabcontent" style="display: block;">
+            <img class="featrs3" src="{% static 'images/Ac. oppening.png' %}">
+        </div>
+
+        <div id="tab2" class="tabcontent">
+            <img class="featrs3" src="{% static 'images/Fund Transfer.png' %}">
+        </div>
+
+        <div id="tab3" class="tabcontent">
+            <img class="featrs3" src="{% static 'images/FD_new.png' %}">
+        </div>
+
+
+        <div class="tab">
+            <div class="tblnk">
+                <h3 class="tablinks active" onmouseover="openTab(event, 'tab1')">
+                    <div class="sdot"></div><span>Apply for account online</span> in 10 minutes
+                </h3>
+                <p class="tabsubt">We worked with banks to make your life faster and easier</p>
+            </div>
+            <div class="tblnk">
+                <h3 class="tablinks" onmouseover="openTab(event, 'tab2')">
+                    <div class="sdot"></div><span>Transfer money</span> to NRE accounts on the go
+                </h3>
+                <p class="tabsubt">With our partner Wise (Formerly Transferwise) NRIs around the world can transfer money to India at a low cost digitally and quickly</p>
+            </div>
+            <div class="tblnk">
+                <h3 class="tablinks" onmouseover="openTab(event, 'tab3')">
+                    <div class="sdot"></div><span>Book tax free</span> fixed deposits with up to 7%* p.a. returns
+                </h3>
+                <p class="tabsubt">Book FD and open your account in one process</p>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+
+    <!-- NEW IN PAGE SCROLLER DESIGN ENDS -->
+
+    <!-- PAGE 6 PLANS -->
+    <div class="container-fluid">
+        <div id="toplans" class="services">
+            <h3 class="serv"><span>Choose a plan</span> that works for you</h3>
+        </div>
+        <div class="plan">
+
+            <div class="colmd4 ">
+                <div class="planbox bharat">
+                    <h3 class="plantitle">Bharat Plan <span>(Popular among NRIs)</span></h3>
+                    <div class="price">$325<span>/yr</span></div>
+                    <div class="con3-left-title">
+                        <ul class="con-left-check">
+                            <li>Complete Banking in India - $49</li>
+                            <li>Complete Investment Planning in India - $175</li>
+                            <li>Complete Taxation in India - $175</li>
+                        </ul>
+                        <a class="getplan" href="https://calendly.com/sbnri/sbnri-call-with-expert?month=2021-03">Get this Plan</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="colmd4 ">
+                <div class="planbox">
+                    <h3 class="plantitle">Banking in India</h3>
+                    <div class="price">$49<span>/yr</span></div>
+                    <div class="con3-left-title">
+                        <ul class="con-left-check">
+                            <li>Existing NRI banking queries (Query dependent)</li>
+                            <li>Home loan advice, assistance, and processing with the appropriate bank - $19</li>
+                            <li>Assistance and execution on New NRI account opening and FDs (Right bank based on process, interest rates) - $19</li>
+                            <li>Credit Card - $19</li>
+                        </ul>
+                        <a class="getplan" href="https://calendly.com/sbnri/sbnri-call-with-expert?month=2021-03">Get this Plan</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="colmd4 ">
+                <div class="planbox">
+                    <h3 class="plantitle">Investment Planning in India</h3>
+                    <div class="price">$175<span>/yr</span></div>
+                    <div class="con3-left-title">
+                        <ul class="con-left-check">
+                            <li>Set up of Trading, Demat account - $49</li>
+                            <li>Stock advisory(additional charges) - $99</li>
+                            <li>Goal based planning - Retirement Planning/ marriage/ start investing etc - $149</li>
+                            </li>
+                        </ul>
+                        <a class="getplan" href="https://calendly.com/sbnri/sbnri-call-with-expert?month=2021-03">Get this Plan</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="colmd4 ">
+                <div class="planbox">
+                    <h3 class="plantitle">Complete Taxation in India</h3>
+                    <div class="price">$175<span>/yr</span></div>
+                    <div class="con3-left-title">
+                        <ul class="con-left-check">
+                            <li>Annual Tax filing & TDS Refund - $69</li>
+                            <li>Tax compliances on Buying/Selling property (Query dependent)</li>
+                            <li>Regulatory filing for Fund-Transfer from NRO to NRE/ Repatriation of Funds - $69</li>
+                            <li>Capital Gain Tax Planning - $59</li>
+                            </li>
+                        </ul>
+                        <a class="getplan" href="https://calendly.com/sbnri/sbnri-call-with-expert?month=2021-03">Get this Plan</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="colmd4 ">
+                <div class="planbox">
+                    <h3 class="plantitle">Real Estate in India</h3>
+                    <div class="price">$175<span>/yr</span></div>
+                    <div class="con3-left-title">
+                        <ul class="con-left-check">
+                            <li>Property Management in India (Buying/Selling/Renting) - $149</li>
+                            <li>Property documentation - $49</li>
+                            <li>Power of Attorney and inheritance (Additional charges - Property dependent)</li>
+                        </ul>
+                        <a class="getplan" href="https://calendly.com/sbnri/sbnri-call-with-expert?month=2021-03">Get this Plan</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="colmd4 ">
+                <div class="planbox">
+                    <h3 class="plantitle">Global Taxation (UK)</h3>
+                    <div class="price">£199<span>/yr</span></div>
+                    <div class="con3-left-title">
+                        <ul class="con-left-check">
+                            <li>Taxation filing for UK and India combined</li>
+                            <li>Any other UK/India Tax Query (Additional Charge)</li>
+
+                        </ul>
+                        <a class="getplan" href="https://calendly.com/sbnri/sbnri-call-with-expert?month=2021-03">Get this Plan</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="colmd4 ">
+                <div class="planbox">
+                    <h3 class="plantitle">Global Taxation (US)</h3>
+                    <div class="price">$199<span>/yr</span></div>
+                    <div class="con3-left-title">
+                        <ul class="con-left-check planh">
+                            <li>Taxation filing for US and India combined</li>
+                            <li>Any other US/India Tax Query (Additional Charge)</li>
+
+                        </ul>
+                        <a class="getplan" href="https://calendly.com/sbnri/sbnri-call-with-expert?month=2021-03">Get this Plan</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PAGE 6 PLANS ENDS -->
+    <!--___________FOOTER STARTS______________________________________________________-->
+    <footer id="footer" class="d-flex-column text-center">
+        <hr class="mt-0">
+        <div class="footer-top">
+            <br>
+            <h5>NRI Banking for Future Generation</h5>
+            <div class="footformtext">No more OTP issues, No more Customer Care Calls. Download Now</div>
+            <!-- FORM REPLACED WITH APP LINKS -->
+            <div class="applinkers">
+                <a href="https://sbnriapp.page.link/main_site">
+                    <a href="https://sbnriapp.page.link/main_site"><img class="applink" src="{% static 'images/appstore.svg' %}"></a>
+                    <a href="https://sbnriapp.page.link/main_site"><img class="applink" src="{% static 'images/googleplay.svg' %}"></a>
+                </a>
+            </div>
+            <!-- <form action="/register_for_email" class="email-form" method="post" class="forminline">
+                {% csrf_token %}
+                <div class="footsub">
+                <input class="inputb " type="email"  id="email2" placeholder="Enter e-mail ID " name="email" > 
+                <button type="submit" id="Submit1" class="getacb btn-primary btn">Get Access</button>
+                </div>
+            </form>  -->
+        </div>
+
+        <!--Footer Links-->
+        <div class="footerlinks text-left text-md-center">
+            <div class="row">
+                <!--First column-->
+                <div class="col-md-1 mx-auto shfooter">
+                    <a href="https://sbnri.com/blog/definitions">
+                        <h6 class="my-2 font-weight- d-none d-md-block">Definition</h6>
+                    </a>
+                    <div class="d-md-none title" data-target="#Definition" data-toggle="collapse">
+                        <div class="mt-3 font-weight-bold shfootermobile"><a href="https://sbnri.com/blog/definitions">Definition</a>
+                            <div class="float-right navbar-toggler">
+                                <i class="fas fa-angle-down"></i>
+                                <i class="fas fa-angle-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled collapse" id="Definition">
+                        <li><a href="https://sbnri.com/blog/definitions/what-is-the-definition-of-an-nri">NRI</a></li>
+                        <li><a href="https://sbnri.com/blog/definitions/who-is-a-pio">PIO</a></li>
+                        <li><a href="https://sbnri.com/blog/definitions/who-is-oci">OCI</a></li>
+                    </ul>
+                </div>
+                <!--/.First column-->
+                <!-- <hr class="clearfix w-80 d-md-none mb-0"> -->
+                <!--Second column-->
+                <div class="col-md-2 mx-auto shfooter">
+                    <a href="https://sbnri.com/blog/nri-investment">
+                        <h6 class="my-2 font-weight- d-none d-md-block">Investments</h6>
+                    </a>
+                    <div class="d-md-none title" data-target="#Investments" data-toggle="collapse">
+                        <div class="mt-3 font-weight-bold shfootermobile"><a href="https://sbnri.com/blog/nri-investment">Investments</a>
+                            <div class="float-right navbar-toggler">
+                                <i class="fas fa-angle-down"></i>
+                                <i class="fas fa-angle-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled collapse" id="Investments">
+                        <li><a href="https://sbnri.com/blog/nri-mutual-fund">Mutual Funds for NRI</a></li>
+                        <li><a href="https://sbnri.com/blog/nri-fixed-deposit">Fixed Deposit for NRI</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+                <!-- <hr class="clearfix w-100 d-md-none mb-0"> -->
+                <!--Third column-->
+                <div class="col-md-2 mx-auto shfooter">
+                    <a href="https://sbnri.com/blog/definitions/what-is-the-definition-of-nri-as-per-income-tax">
+                        <h6 class="my-2 font-weight- d-none d-md-block">Tax Advisory</h6>
+                    </a>
+                    <div class="d-md-none title" data-target="#TaxAdvisory" data-toggle="collapse">
+                        <div class="mt-3 font-weight-bold shfootermobile"><a href="https://sbnri.com/blog/definitions/what-is-the-definition-of-nri-as-per-income-tax">Tax
+                Advisory</a>
+                            <div class="float-right navbar-toggler">
+                                <i class="fas fa-angle-down"></i>
+                                <i class="fas fa-angle-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled collapse" id="TaxAdvisory">
+                        <li><a href="https://sbnri.com/blog/real-estate/why-should-an-nri-buy-a-house-in-india">Real Estate</a></li>
+                        <li><a href="https://sbnri.com/blog/nri-mutual-fund/what-are-the-tax-implications-on-nri-on-mutual-funds">Mutual
+                Funds</a></li>
+                        <li><a href="https://sbnri.com/blog/investment/how-is-pms-taxed-for-nris">PMS</a></li>
+                        <li><a href="https://sbnri.com/blog/nri-investment/nri-investment-in-indian-stock-market">Shares/Stock</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--/.Third column-->
+                <!-- <hr class="clearfix w-80 d-md-none mb-0"> -->
+                <!--Fourth column-->
+                <div class="col-md-1 mx-auto shfooter footercol4">
+                    <a href="https://sbnri.com/blog/remittance">
+                        <h6 class="my-2 font-weight- d-none d-md-block">Remittance</h6>
+                    </a>
+                    <div class="d-md-none title" data-target="#Remittance" data-toggle="collapse">
+                        <div class="mt-3 font-weight-bold shfootermobile"><a href="https://sbnri.com/blog/remittance">Remittance<a
+                  href="https://sbnri.com/blog/remittance"></a>
+                            <div class="float-right navbar-toggler">
+                                <i class="fas fa-angle-down"></i>
+                                <i class="fas fa-angle-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled collapse" id="Remittance">
+                        <li><a href="https://sbnri.com/blog/remittance/nro-to-nre-fund-transfer-ultimate-guide-2020">NRO to NRE</a>
+                        </li>
+                        <li><a href="https://sbnri.com/blog/remittance/nre-to-nro-fund-transfer">NRE to NRO</a></li>
+
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+                <!-- <hr class="clearfix w-80 d-md-none mb-0"> -->
+                <!--Fifth column-->
+                <div class="col-md-3 mx-auto shfooter">
+                    <a href="https://sbnri.com/blog/nri-bank-accounts/what-are-the-benefits-of-opening-an-nri-account">
+                        <h6 class="my-2 font-weight- d-none d-md-block">NRI Account Opening</h6>
+                        <a href="https://sbnri.com/blog/nri-bank-accounts/what-are-the-benefits-of-opening-an-nri-account"></a>
+                        <div class="d-md-none title" data-target="#NRIAO" data-toggle="collapse">
+                            <div class="mt-3 font-weight-bold shfootermobile"><a href="https://sbnri.com/blog/nri-bank-accounts/what-are-the-benefits-of-opening-an-nri-account">NRI
+                  Account Opening</a>
+                                <div class="float-right navbar-toggler">
+                                    <i class="fas fa-angle-down"></i>
+                                    <i class="fas fa-angle-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled collapse" id="NRIAO">
+                            <li><a href="https://sbnri.com/blog/nri-bank-accounts/is-nomination-allowed-in-nro-nre-accounts">Nomination</a>
+                            </li>
+
+                            <li><a href="https://sbnri.com/blog/nri-bank-accounts/can-two-nris-open-a-joint-account">Joint Account</a>
+                            </li>
+
+                            <li><a href="https://sbnri.com/blog/nri-bank-accounts/how-can-nri-open-a-demat-account-online">Demat
+                  Account</a></li>
+
+                            <li><a href="https://sbnri.com/blog/investment/what-is-a-pis-account">Portfolio Investment Scheme
+                  (PIS)</a></li>
+
+                            <li><a href="https://sbnri.com/blog/nri-bank-accounts/nro-account-benefits">NRO Account Benefits</a></li>
+
+                            <li><a href="https://sbnri.com/blog/nri-bank-accounts/non-residents-and-their-bank-accounts">Non Residents
+                  and their bank accounts</a></li>
+                        </ul>
+                </div>
+                <!--/.Fifth column-->
+                <!-- <hr class="clearfix w-80 d-md-none mb-0"> -->
+                <!--Sixth column-->
+                <div class="col-md-1 mx-auto shfooter footercol6">
+                    <a href="https://sbnri.com/blog/repatriation">
+                        <h6 class="my-2 font-weight- d-none d-md-block">Repatriation</h6>
+                        <a href="https://sbnri.com/blog/repatriation"></a>
+                        <div class="d-md-none title" data-target="#Repatriation" data-toggle="collapse">
+                            <div class="mt-3 font-weight-bold shfootermobile"><a href="https://sbnri.com/blog/repatriation">Repatriation</a>
+                                <div class="float-right navbar-toggler">
+                                    <i class="fas fa-angle-down"></i>
+                                    <i class="fas fa-angle-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled collapse" id="Repatriation">
+                            <li><a href="https://sbnri.com/blog/repatriation/top-5-mediums-for-sending-money-abroad-online-2020">Mediums</a>
+                            </li>
+
+                            <li><a href="https://sbnri.com/blog/repatriation/what-is-the-process-of-repatriation-from-india-to-usa">USA</a>
+                            </li>
+
+                            <li><a href="https://sbnri.com/blog/repatriation/what-is-the-process-of-repatriation-from-india-to-uk">UK</a>
+                            </li>
+
+                            <li><a href="https://sbnri.com/blog/repatriation/what-is-the-process-of-repatriation-from-india-to-dubai">Dubai</a>
+                            </li>
+
+                            <li><a href="https://sbnri.com/blog/repatriation/what-is-the-process-of-repatriation-from-india-to-saudi-arabia">Saudi
+                  Arabia</a></li>
+                        </ul>
+                </div>
+                <!--/.Sixth column-->
+                <!-- <hr class="clearfix w-80 d-md-none mb-0"> -->
+                <!--Seventh ilmaanzia column-->
+                <div class="col-md-2 mx-auto shfooter">
+                    <a href="https://sbnri.com/blog/retirement/nri-returning-to-india-top-3-tips">
+                        <h6 class="my-2 font-weight- d-none d-md-block">Retirement</h6>
+                    </a>
+                    <div class="d-md-none title" data-target="#Retirement" data-toggle="collapse">
+                        <div class="mt-3 font-weight-bold shfootermobile"><a href="https://sbnri.com/blog/retirement/nri-returning-to-india-top-3-tips">Retirement</a>
+                            <div class="float-right navbar-toggler">
+                                <i class="fas fa-angle-down"></i>
+                                <i class="fas fa-angle-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled collapse" id="Retirement">
+                        <li><a href="https://sbnri.com/blog/retirement/places-to-retire-in-india-for-nri">Top 10 places to retire in
+                India</a></li>
+
+                        <li><a href="https://sbnri.com/blog/retirement/moving-back-to-india-from-usa">Moving back to India from
+                USA</a></li>
+
+                        <li><a href="https://sbnri.com/blog/real-estate/nri-selling-inherited-property-in-india">NRI Selling
+                Inherited Property in India</a></li>
+                    </ul>
+                </div>
+                <!--/.Seventh column-->
+
+
+            </div>
+
+            <!-- NEW POST FOOTERLINKS LINKS -->
+
+            <div class="row postfooter ">
+                <div class="col-md pflinks  ">
+                    <a href="disclaimer">
+                        <h6>Disclaimer</h6>
+                    </a>
+                </div>
+                <div class="col-md pflinks  ">
+                    <a href="about-us">
+                        <h6>About us</h6>
+                    </a>
+                </div>
+                <div class="col-md pflinks  ">
+                    <a href="privacy-policy">
+                        <h6>Privacy Policy</h6>
+                    </a>
+                </div>
+                <div class="col-md pflinks  ">
+                    <a href="terms-of-use">
+                        <h6>Terms of Use</h6>
+                    </a>
+                </div>
+                <div class="col-md pflinks  ">
+                    <a href="intellectual-property-policy">
+                        <h6>Intellectual Policy</h6>
+                    </a>
+                </div>
+                <div class="col-md pflinks  ">
+                    <a href="mailto:support@sbnri.com">
+                        <h6>Contact us</h6>
+                    </a>
+                </div>
+                <div class="col-md pflinks  ">
+                    <a href="https://sbnri.com/blog/html-sitemap">
+                        <h6>Sitemap</h6>
+                    </a>
+                </div>
+            </div>
+
+            <!-- NEW POST FOOTERLINKS LINKS -->
+
+        </div>
+
+        <!--/.Footer Links-->
+        <hr class="mb-0">
+        <!--Copyright-->
+        <div class="officeaddr"></div>
+        <!--Social buttons-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 officeaddr">Our Location:<br> SBNRI Technologies Pvt Ltd<br> DesqWorx, Unitech Club Patio,<br> Block -E, South City -1, Gurgaon (Delhi-NCR), 122001</div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <br>
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/SBNRINRIMARKETPLACE" target="_blank" class="sbtn btn-large mx-1" title="Facebook">
+                                    <img class="feat2" src="{% static 'images/icon-fb.svg' %}">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/company/sbnri-nribanking/" target="_blank" class="sbtn btn-large mx-1" title="Linkedin">
+                                    <img class="feat2" src="{% static 'images/icon-ln.svg' %}">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/sbnri" target="_blank" class="sbtn btn-large mx-1" title="Twitter">
+                                    <img class="feat2" src="{% static 'images/icon-tw.svg' %}">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/channel/UCDIvOwmgNZDIzXCcwJt8GSg" target="_blank" class="sbtn btn-large mx-1" title="Youtube">
+                                    <img class="feat2" src="{% static 'images/icon-yt.svg' %}">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.Social buttons-->
+
+                </div>
+                <div class="col-md-4 emailfooter">
+                    <address><a href="mailto:support@sbnri.com">Email : support@sbnri.com</a></address>
+                </div>
+            </div>
+
+            <div class="py-3 text-center" style="opacity: 0.6;">
+                Copyright |
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> <a href="#">@ SBNRI,</a>all rights reserved
+            </div>
+            <!--/.Copyright-->
+        </div>
+
+    </footer>
+    <!--___________________FOOTER ENDS__________________________________________________________-->
+    <!-- DEVELOPED BY ILMAAN ZIA -->
+
+
+
+</body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159934951-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '{{ ga_id }}');
+</script>
+<!-- Global site tag (gtag.js) - Google Ads: 652562312 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-652562312"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2549933848599237');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=2549933848599237&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+<!-- Quora Pixel Code (JS Helper) -->
+<script>
+    ! function(q, e, v, n, t, s) {
+        if (q.qp) return;
+        n = q.qp = function() {
+            n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments);
+        };
+        n.queue = [];
+        t = document.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = document.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+    }(window, 'script', 'https://a.quora.com/qevents.js');
+    qp('init', '60a77d34b7a94b588ee006870c808700');
+    qp('track', 'ViewContent');
+</script>
+
+
+
+
+
+
+</html>
+
+<!-- NAVBAR SCRIPT -->
+<script>
+    const toggleBtn = document.getElementsByClassName('togglebtn')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleBtn.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+</script>
+<!-- NAVBAR SCRIPT ENDS -->
+
+<!-- AJAX SCRIPT FOR FORMS  -->
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script>
+    function ValidateEmail(email) {
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+            return (true);
+        }
+        return (false);
+    }
+
+    $(document).ready(function() {
+        $("#Submit").click(function(e) {
+            e.preventDefault();
+            var email = $("#email1").val();
+            if (ValidateEmail(email) == false) {
+                alert("You have entered an invalid email address!")
+                return;
+            }
+            $.ajax({
+                type: "POST",
+                url: "/register_for_email",
+                // data: { email: "sa@gmail.com", csrfmiddlewaretoken: "{{csrf_token}}" },              
+                data: {
+                    email: $("#email1").val(),
+                    csrfmiddlewaretoken: "{{csrf_token}}"
+                },
+                success: function(result) {
+                    // $('#myModal .modal-body').text("asdf")
+                    //console.log(result);
+                    if (result.status == 1) {
+                        //$(".modal-class #country").html( result.data.matched_location ); 
+                        var location = result.data.matched_location;
+                        var heading_text = result.data.heading_text;
+                        $('#myModal').show();
+                        $(".waitlist-count").text(result.data.people_count);
+
+                        $('.modal-class #thank-you-modal-text').html("<b>" + heading_text + "</b>");
+
+                        if (location)
+                            $('.modal-class #country').text("Country: " + location);
+                        $('#myModal').show();
+                    } else
+                        alert("Please try again!");
+                }
+            });
+        });
+    });
+    //$(".waitlist-count").text(result.data.saved_form_id);
+</script>
+
+<script>
+    function ValidateEmail(email) {
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+            return (true);
+        }
+        return (false);
+    }
+
+    $(document).ready(function() {
+        $("#Submit1").click(function(e) {
+            e.preventDefault();
+            var email = $("#email2").val();
+            if (ValidateEmail(email) == false) {
+                alert("You have entered an invalid email address!")
+                return;
+            }
+            $.ajax({
+                type: "POST",
+                url: "/register_for_email",
+                // data: { email: "sa@gmail.com", csrfmiddlewaretoken: "{{csrf_token}}" },              
+                data: {
+                    email: $("#email2").val(),
+                    csrfmiddlewaretoken: "{{csrf_token}}"
+                },
+                success: function(result) {
+                    // $('#myModal .modal-body').text("asdf")
+                    //console.log(result);
+                    if (result.status == 1) {
+                        //$(".modal-class #country").html( result.data.matched_location ); 
+                        var location = result.data.matched_location;
+                        var heading_text = result.data.heading_text;
+
+                        $('.modal-class #thank-you-modal-text').html("<b>" + heading_text + "</b>");
+                        $(".waitlist-count").text(result.data.people_count);
+
+
+
+                        if (location)
+                            $('.modal-class #country').text("Country: " + location);
+                        $('#myModal').show();
+                    } else
+                        alert("Please try again!");
+                }
+            });
+        });
+    });
+</script>
+
+
+
+
+<!-- AJAX SCRIPTS FOR FORM ENDS -->
+
+<!-- SCROLL DOWN TO PLANS JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("#toplans").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+<!-- SCROLL DOWN TO PLANS JS ENDS -->
+
+
+<!-- SCRIPT FOR SCROLL 3D STYLES FADE IN AND ALL -->
+
+<script>
+    // Trigger CSS animations on scroll.
+    // Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
+
+    // Looking for a version that also reverses the animation when
+    // elements scroll below the fold again?
+    // --> Check https://codepen.io/bramus/pen/vKpjNP
+
+    jQuery(function($) {
+
+        // Function which adds the 'animated' class to any '.animatable' in view
+        var doAnimations = function() {
+
+            // Calc current offset and get all animatables
+            var offset = $(window).scrollTop() + $(window).height(),
+                $animatables = $('.animatable');
+
+            // Unbind scroll handler if we have no animatables
+            if ($animatables.length == 0) {
+                $(window).off('scroll', doAnimations);
+            }
+
+            // Check all animatables and animate them if necessary
+            $animatables.each(function(i) {
+                var $animatable = $(this);
+                if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+                    $animatable.removeClass('animatable').addClass('animated');
+                }
+            });
+
+        };
+
+        // Hook doAnimations on scroll, and trigger a scroll
+        $(window).on('scroll', doAnimations);
+        $(window).trigger('scroll');
+
+    });
+</script>
+
+<script type="text/javascript">
+    jQuery(function($) {
+        console.log("page load!");
+
+        // var ua = navigator.userAgent.toLowerCase();
+        // var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+
+        // console.log(isAndroid); if(isAndroid) {
+        //   document.getElementById("applinker").style.display = "block";
+        //   document.getElementById("openaccount").style.display = "none";
+
+        // }
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // true for mobile device
+            document.getElementById("applinker").style.display = "block";
+            document.getElementById("openaccount").style.display = "none";
+        }
+
+
+    });
+</script>
+
+
+
+<!-- SCRIPT ENDS -->

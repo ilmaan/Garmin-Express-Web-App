@@ -1,0 +1,180 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Google Font Links-->
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
+
+        <!-- ADDED CSS FILES -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        </style>
+        <link rel="stylesheet" type="text/css" href="{% static 'web/sharebuttons.css' %}">
+
+
+        <!-- ADDED CSS CDN -->
+        <!-- FOR NAVBAR -->
+
+
+        <!-- ADDED SCRIPTS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <!-- GOOGLE ADS SCRIPT -->
+        <script data-ad-client="ca-pub-2216946796152262" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+        <!-- FOR NAVBAR -->
+
+        <title>Simplifying Banking For NRIs| SBNRI</title>
+        <link rel="shortcut icon" href="{% static 'images/sbnrilogo.png' %}" type="image/x-icon">
+
+
+    </head>
+</head>
+
+<body>
+
+    <div class="container-flex">
+
+        <nav class="navbar navbar-light bg-light justify-content-between">
+            <a class="navbar-brand">Garmin</a>
+            <form class="form-inline">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Get Quote</button>
+            </form>
+        </nav>
+
+
+        <div id="pattern-bg">
+            <div id="glass">
+
+                <div class="con1">
+                    <img class="dot2" src="{% static 'images/map.png' %}">
+                </div>
+                <!-- <span class="larger bolder">Garmin</span> -->
+                <section class="nerdy-pen larger bolder">
+                    <h1 class="nerdy-pen__text">Get
+                        <span class="txt-rotate" data-period="2000" data-rotate='[ "Automotive GPS Map Updates.", "Trucking GPS Map Updates.", ".", "Golf Watch Map Updates.", "Marine Device Map Updates!" ]'></span>
+
+                    </h1>
+                </section>
+
+
+                <span class="larger bolder">Chat with our experts 24/7</span>
+                <div class="buttons">
+                    <button class="raise">Raise Query</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="flex">
+            <div class="glass-block">
+                <h2>Automotive GPS Map Updates</h2>
+                <p>To update your automotive GPS connect the GPS/SD card with the computer and download the updates.
+                </p>
+            </div>
+            <div class="glass-block">
+                <h2>Trucking GPS Map Updates</h2>
+                <p>Plugin the GPS unit with a computer with the original USB cable provided by the manufacturer and download the updates.
+                </p>
+            </div>
+            <div class="glass-block">
+                <h2>Golf Watch Map Updates</h2>
+                <p>Connect the SD card of the GPS to the computer and when your computer detects the device install the updates into the SD Card.
+                </p>
+            </div>
+            <div class="glass-block">
+                <h2>Marine Device Map Updates</h2>
+                <p>Buy the SD card with update for your device, once you have the maps connect it to the GPS and get the latest data for your Marine unit.
+                </p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+
+
+
+
+</html>
+
+<script>
+    var TxtRotate = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 100 - Math.random() * 100;
+
+        if (this.isDeleting) {
+            delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function() {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-rotate');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+    };
+</script>
