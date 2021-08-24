@@ -16,6 +16,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+        <link href="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
 
         <!-- ADDED CSS FILES -->
@@ -33,6 +35,14 @@
         <!-- ADDED SCRIPTS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script>
+        <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
+        <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
+
 
         <!-- GOOGLE ADS SCRIPT -->
         <script data-ad-client="ca-pub-2216946796152262" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -111,51 +121,156 @@
             <h4><b>Connect to us 24/7 to our toll free No:</b> <br><span>+1234567</span></h4>
             <br>
             <div class="row">
-                <div class="col-sm-3 con2card">
+                <div class="col-sm-2 con2card">
                     <i class="fas fa-headset"></i>
                     <p>Dedicated Customer Support</p>
 
                 </div>
-                <div class="col-sm-3 con2card">
+                <div class="col-sm-2 con2card">
                     <i class="fas fa-traffic-light"></i>
                     <p>Live Traffic Updates</p>
 
                 </div>
-                <div class="col-sm-3 con2card">
+                <div class="col-sm-2 con2card">
                     <i class="fa fa-truck" aria-hidden="true"></i>
                     <p>Logistics Support </p>
 
                 </div>
-                <div class="col-sm-3 con2card">
+                <div class="col-sm-2 con2card">
                     <i class="fas fa-plane-departure"></i>
                     <p>Air traffic updates</p>
                 </div>
             </div>
         </div>
 
+
+
         <div class="anim con3">
 
-            <section class="demo">
+            <h1>Our services</h1>
 
-                <dl class="list nigiri">
-                    <dt>We Can Help You With</dt>
-                    <dd><a href="#">GPS Map Update</a></dd>
-                    <dd><a href="#">GPS Blank screen issues</a></dd>
-                    <dd><a href="#">Failure in connecting to the map</a></dd>
-                    <dd><a href="#">GPS DRiver Fix</a></dd>
-                    <dd><a href="#">GPS server not responding</a></dd>
-                    <dd><a href="#">The device set up problems</a></dd>
-                    <dd><a href="#">Iwashi</a></dd>
-                    <dd><a href="#">Kohada</a></dd>
-                    <dd><a href="#">Hirame</a></dd>
-                    <dd><a href="#">Tobiwo</a></dd>
-                </dl>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>01. GPS Map Update</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4>02. GPS DRiver Fix</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4>03. GPS server not responding</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4>04. The device set up problems</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4>05. Failure in connecting to the map</h4>
+                </div>
+                <div class="col-sm-12">
+                    <h4>06.GPS Blank screen issues.</h4>
+                </div>
+            </div>
 
-
-                <a href="#" class="toggle">Toggle</a>
-
-            </section>
         </div>
+
+        <div class=" stats con4">
+            <header id="home" class="site-header">
+
+                <div class="container">
+
+                    <div class="row row-padding-large">
+
+                        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 text-center">
+
+                            <div id="header-content">
+
+                                <h2>Increase in Number of Users in recent years</h2>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div id="chartContainer">
+
+                <div class="switch-holder">
+
+                    <h5>Years</h5>
+
+                    <div class="switch">
+                        <input name="switch" id="one" type="radio" value="2015" />
+                        <label for="one" class="switch__label switch__label_one">2015</label>
+                        <input name="switch" id="two" type="radio" value="2016" />
+                        <label for="two" class="switch__label switch__label_two">2016</label>
+                        <input name="switch" id="three" type="radio" value="2017" checked/>
+                        <label for="three" class="switch__label switch__label_three">2017</label>
+                        <div class="switch__indicator" /></div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="row row-padding-large">
+
+                    <div class="col-xs-6 col-sm-3 col-md-3 couter-col">
+                        <div class="counter-block valign-parent">
+
+                            <div class="counter-number valign">
+                                <span id="firstNr" class="number" rel="8.6">8,6</span>
+                                <span class="total">/10</span>
+                            </div>
+
+                            <h4>GPS Users</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3 couter-col">
+                        <div class="counter-block valign-parent">
+
+                            <div class="counter-number valign">
+                                <span id="secondNr" class="number" rel="7.2">8,2</span>
+                                <span class="total">/10</span>
+                            </div>
+
+                            <h4>GPS Support</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3 couter-col">
+                        <div class="counter-block valign-parent">
+
+                            <div class="counter-number valign">
+                                <span id="thirdNr" class="number" rel="90">90</span>
+                                <span class="total">/100</span>
+                            </div>
+
+                            <h4>Satisfied Customers</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3 couter-col">
+                        <div class="counter-block valign-parent">
+
+                            <div class="counter-number valign">
+                                <span id="fourthNr" class="number" rel="95">95</span>
+                                <span class="total">%</span>
+                            </div>
+
+                            <h4>Growth Percentage</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <canvas id="c" width="1000" height="400"></canvas>
+
+        </div>
+    </div>
 
 
 
@@ -679,4 +794,622 @@
 
         $('.warning').show();
     }
+</script>
+
+<script>
+    (function() {
+
+        var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
+
+        // Main
+        initHeader();
+        initAnimation();
+        addListeners();
+
+        function initHeader() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            target = {
+                x: width / 2,
+                y: height / 2
+            };
+
+            largeHeader = document.getElementById('large-header');
+            largeHeader.style.height = height + 'px';
+
+            canvas = document.getElementById('demo-canvas');
+            canvas.width = width;
+            canvas.height = height;
+            ctx = canvas.getContext('2d');
+
+            // create points
+            points = [];
+            for (var x = 0; x < width; x = x + width / 20) {
+                for (var y = 0; y < height; y = y + height / 20) {
+                    var px = x + Math.random() * width / 20;
+                    var py = y + Math.random() * height / 20;
+                    var p = {
+                        x: px,
+                        originX: px,
+                        y: py,
+                        originY: py
+                    };
+                    points.push(p);
+                }
+            }
+
+            // for each point find the 5 closest points
+            for (var i = 0; i < points.length; i++) {
+                var closest = [];
+                var p1 = points[i];
+                for (var j = 0; j < points.length; j++) {
+                    var p2 = points[j]
+                    if (!(p1 == p2)) {
+                        var placed = false;
+                        for (var k = 0; k < 5; k++) {
+                            if (!placed) {
+                                if (closest[k] == undefined) {
+                                    closest[k] = p2;
+                                    placed = true;
+                                }
+                            }
+                        }
+
+                        for (var k = 0; k < 5; k++) {
+                            if (!placed) {
+                                if (getDistance(p1, p2) < getDistance(p1, closest[k])) {
+                                    closest[k] = p2;
+                                    placed = true;
+                                }
+                            }
+                        }
+                    }
+                }
+                p1.closest = closest;
+            }
+
+            // assign a circle to each point
+            for (var i in points) {
+                var c = new Circle(points[i], 2 + Math.random() * 2, 'rgba(255,255,255,0.3)');
+                points[i].circle = c;
+            }
+        }
+
+        // Event handling
+        function addListeners() {
+            if (!('ontouchstart' in window)) {
+                window.addEventListener('mousemove', mouseMove);
+            }
+            window.addEventListener('scroll', scrollCheck);
+            window.addEventListener('resize', resize);
+        }
+
+        function mouseMove(e) {
+            var posx = posy = 0;
+            if (e.pageX || e.pageY) {
+                posx = e.pageX;
+                posy = e.pageY;
+            } else if (e.clientX || e.clientY) {
+                posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+                posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+            }
+            target.x = posx;
+            target.y = posy;
+        }
+
+        function scrollCheck() {
+            if (document.body.scrollTop > height) animateHeader = false;
+            else animateHeader = true;
+        }
+
+        function resize() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            largeHeader.style.height = height + 'px';
+            canvas.width = width;
+            canvas.height = height;
+        }
+
+        // animation
+        function initAnimation() {
+            animate();
+            for (var i in points) {
+                shiftPoint(points[i]);
+            }
+        }
+
+        function animate() {
+            if (animateHeader) {
+                ctx.clearRect(0, 0, width, height);
+                for (var i in points) {
+                    // detect points in range
+                    if (Math.abs(getDistance(target, points[i])) < 4000) {
+                        points[i].active = 0.3;
+                        points[i].circle.active = 0.6;
+                    } else if (Math.abs(getDistance(target, points[i])) < 20000) {
+                        points[i].active = 0.1;
+                        points[i].circle.active = 0.3;
+                    } else if (Math.abs(getDistance(target, points[i])) < 40000) {
+                        points[i].active = 0.02;
+                        points[i].circle.active = 0.1;
+                    } else {
+                        points[i].active = 0;
+                        points[i].circle.active = 0;
+                    }
+
+                    drawLines(points[i]);
+                    points[i].circle.draw();
+                }
+            }
+            requestAnimationFrame(animate);
+        }
+
+        function shiftPoint(p) {
+            TweenLite.to(p, 1 + 1 * Math.random(), {
+                x: p.originX - 50 + Math.random() * 100,
+                y: p.originY - 50 + Math.random() * 100,
+                ease: Circ.easeInOut,
+                onComplete: function() {
+                    shiftPoint(p);
+                }
+            });
+        }
+
+        // Canvas manipulation
+        function drawLines(p) {
+            if (!p.active) return;
+            for (var i in p.closest) {
+                ctx.beginPath();
+                ctx.moveTo(p.x, p.y);
+                ctx.lineTo(p.closest[i].x, p.closest[i].y);
+                ctx.strokeStyle = 'rgba(156,217,249,' + p.active + ')';
+                ctx.stroke();
+            }
+        }
+
+        function Circle(pos, rad, color) {
+            var _this = this;
+
+            // constructor
+            (function() {
+                _this.pos = pos || null;
+                _this.radius = rad || null;
+                _this.color = color || null;
+            })();
+
+            this.draw = function() {
+                if (!_this.active) return;
+                ctx.beginPath();
+                ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
+                ctx.fillStyle = 'rgba(156,217,249,' + _this.active + ')';
+                ctx.fill();
+            };
+        }
+
+        // Util
+        function getDistance(p1, p2) {
+            return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
+        }
+
+    })();
+</script>
+
+<script>
+    (function(root, factory) {
+        if (typeof define === 'function' && define.amd) {
+            define(factory);
+        } else if (typeof exports === 'object') {
+            module.exports = factory(require, exports, module);
+        } else {
+            root.CountUp = factory();
+        }
+    }(this, function(require, exports, module) {
+
+        /*
+  
+            countUp.js
+            by @inorganik
+  
+        */
+
+        // target = id of html element or var of previously selected html element where counting occurs
+        // startVal = the value you want to begin at
+        // endVal = the value you want to arrive at
+        // decimals = number of decimal places, default 0
+        // duration = duration of animation in seconds, default 2
+        // options = optional object of options (see below)
+
+        var CountUp = function(target, startVal, endVal, decimals, duration, options) {
+
+            // make sure requestAnimationFrame and cancelAnimationFrame are defined
+            // polyfill for browsers without native support
+            // by Opera engineer Erik Möller
+            var lastTime = 0;
+            var vendors = ['webkit', 'moz', 'ms', 'o'];
+            for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+                window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+                window.cancelAnimationFrame =
+                    window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
+            }
+            if (!window.requestAnimationFrame) {
+                window.requestAnimationFrame = function(callback, element) {
+                    var currTime = new Date().getTime();
+                    var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                    var id = window.setTimeout(function() {
+                            callback(currTime + timeToCall);
+                        },
+                        timeToCall);
+                    lastTime = currTime + timeToCall;
+                    return id;
+                };
+            }
+            if (!window.cancelAnimationFrame) {
+                window.cancelAnimationFrame = function(id) {
+                    clearTimeout(id);
+                };
+            }
+
+            var self = this;
+            self.version = function() {
+                return '1.8.3';
+            };
+
+            function formatNumber(num) {
+                num = num.toFixed(self.decimals);
+                num += '';
+                var x, x1, x2, rgx;
+                x = num.split('.');
+                x1 = x[0];
+                x2 = x.length > 1 ? self.options.decimal + x[1] : '';
+                rgx = /(\d+)(\d{3})/;
+                if (self.options.useGrouping) {
+                    while (rgx.test(x1)) {
+                        x1 = x1.replace(rgx, '$1' + self.options.separator + '$2');
+                    }
+                }
+                return self.options.prefix + x1 + x2 + self.options.suffix;
+            }
+            // Robert Penner's easeOutExpo
+            function easeOutExpo(t, b, c, d) {
+                return c * (-Math.pow(2, -10 * t / d) + 1) * 1024 / 1023 + b;
+            }
+
+            function ensureNumber(n) {
+                return (typeof n === 'number' && !isNaN(n));
+            }
+
+            // default options
+            self.options = {
+                useEasing: true, // toggle easing
+                useGrouping: true, // 1,000,000 vs 1000000
+                separator: ',', // character to use as a separator
+                decimal: '.', // character to use as a decimal
+                easingFn: easeOutExpo, // optional custom easing function, default is Robert Penner's easeOutExpo
+                formattingFn: formatNumber, // optional custom formatting function, default is formatNumber above
+                prefix: '', // optional text before the result
+                suffix: '' // optional text after the result
+            };
+
+            // extend default options with passed options object
+            if (options && typeof options === 'object') {
+                for (var key in self.options) {
+                    if (options.hasOwnProperty(key) && options[key]) {
+                        self.options[key] = options[key];
+                    }
+                }
+            }
+
+            if (self.options.separator === '') self.options.useGrouping = false;
+
+            self.initialize = function() {
+                if (self.initialized) return true;
+                self.d = (typeof target === 'string') ? document.getElementById(target) : target;
+                if (!self.d) {
+                    console.error('[CountUp] target is null or undefined', self.d);
+                    return false;
+                }
+                self.startVal = Number(startVal);
+                self.endVal = Number(endVal);
+                // error checks
+                if (ensureNumber(self.startVal) && ensureNumber(self.endVal)) {
+                    self.decimals = Math.max(0, decimals || 0);
+                    self.dec = Math.pow(10, self.decimals);
+                    self.duration = Number(duration) * 1000 || 2000;
+                    self.countDown = (self.startVal > self.endVal);
+                    self.frameVal = self.startVal;
+                    self.initialized = true;
+                    return true;
+                } else {
+                    console.error('[CountUp] startVal or endVal is not a number', self.startVal, self.endVal);
+                    return false;
+                }
+            };
+
+            // Print value to target
+            self.printValue = function(value) {
+                var result = self.options.formattingFn(value);
+
+                if (self.d.tagName === 'INPUT') {
+                    this.d.value = result;
+                } else if (self.d.tagName === 'text' || self.d.tagName === 'tspan') {
+                    this.d.textContent = result;
+                } else {
+                    this.d.innerHTML = result;
+                }
+            };
+
+            self.count = function(timestamp) {
+
+                if (!self.startTime) {
+                    self.startTime = timestamp;
+                }
+
+                self.timestamp = timestamp;
+                var progress = timestamp - self.startTime;
+                self.remaining = self.duration - progress;
+
+                // to ease or not to ease
+                if (self.options.useEasing) {
+                    if (self.countDown) {
+                        self.frameVal = self.startVal - self.options.easingFn(progress, 0, self.startVal - self.endVal, self.duration);
+                    } else {
+                        self.frameVal = self.options.easingFn(progress, self.startVal, self.endVal - self.startVal, self.duration);
+                    }
+                } else {
+                    if (self.countDown) {
+                        self.frameVal = self.startVal - ((self.startVal - self.endVal) * (progress / self.duration));
+                    } else {
+                        self.frameVal = self.startVal + (self.endVal - self.startVal) * (progress / self.duration);
+                    }
+                }
+
+                // don't go past endVal since progress can exceed duration in the last frame
+                if (self.countDown) {
+                    self.frameVal = (self.frameVal < self.endVal) ? self.endVal : self.frameVal;
+                } else {
+                    self.frameVal = (self.frameVal > self.endVal) ? self.endVal : self.frameVal;
+                }
+
+                // decimal
+                self.frameVal = Math.round(self.frameVal * self.dec) / self.dec;
+
+                // format and print value
+                self.printValue(self.frameVal);
+
+                // whether to continue
+                if (progress < self.duration) {
+                    self.rAF = requestAnimationFrame(self.count);
+                } else {
+                    if (self.callback) self.callback();
+                }
+            };
+            // start your animation
+            self.start = function(callback) {
+                if (!self.initialize()) return;
+                self.callback = callback;
+                self.rAF = requestAnimationFrame(self.count);
+            };
+            // toggles pause/resume animation
+            self.pauseResume = function() {
+                if (!self.paused) {
+                    self.paused = true;
+                    cancelAnimationFrame(self.rAF);
+                } else {
+                    self.paused = false;
+                    delete self.startTime;
+                    self.duration = self.remaining;
+                    self.startVal = self.frameVal;
+                    requestAnimationFrame(self.count);
+                }
+            };
+            // reset to startVal so animation can be run again
+            self.reset = function() {
+                self.paused = false;
+                delete self.startTime;
+                self.initialized = false;
+                if (self.initialize()) {
+                    cancelAnimationFrame(self.rAF);
+                    self.printValue(self.startVal);
+                }
+            };
+            // pass a new endVal and start animation
+            self.update = function(newEndVal) {
+                if (!self.initialize()) return;
+                cancelAnimationFrame(self.rAF);
+                self.paused = false;
+                delete self.startTime;
+                self.startVal = self.frameVal;
+                self.endVal = Number(newEndVal);
+                if (ensureNumber(self.endVal)) {
+                    self.countDown = (self.startVal > self.endVal);
+                    self.rAF = requestAnimationFrame(self.count);
+                } else {
+                    console.error('[CountUp] update() - new endVal is not a number', newEndVal);
+                }
+            };
+
+            // format startVal on initialization
+            if (self.initialize()) self.printValue(self.startVal);
+        };
+
+        return CountUp;
+
+    }));
+
+
+    // CHART JS
+    window.randomScalingFactor = function() {
+        //return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+        return Math.floor(Math.random() * (70 - 35 + 1)) + 35;
+    }
+
+    // Graph options
+    var options = {
+        title: {
+            display: false
+        },
+        legend: {
+            display: false
+        },
+        maintainAspectRatio: false,
+        responsive: false,
+        tooltips: {
+            enabled: false
+        },
+        animation: {
+            duration: 1800,
+            easing: 'easeOutBack'
+        },
+        scales: {
+            xAxes: [{
+                display: false
+            }],
+            yAxes: [{
+                display: false,
+                ticks: {
+                    beginAtZero: true,
+                    min: 0,
+                    max: 100
+                }
+            }]
+        }
+    };
+
+    // The container
+    var ctx = document.getElementById("c").getContext("2d"),
+        gradient = ctx.createLinearGradient(0, 0, 0, 400);
+
+    // Line data
+    var dataset_01 = {
+        label: "datasets 01",
+        backgroundColor: gradient,
+        borderColor: "rgba(0,0,0,0)",
+        pointBorderColor: "rgba(0,0,0,0)",
+        pointRadius: 0,
+        data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+            //data: [35, 60, 70, 65, 45, 55, 30, 30, 55, 45, 50]
+    };
+
+    var dataset_02 = {
+        label: "datasets 02",
+        backgroundColor: gradient,
+        borderColor: "rgba(0,0,0,0)",
+        pointBorderColor: "rgba(0,0,0,0)",
+        pointRadius: 0,
+        data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+            //data: [55, 70, 60, 70, 55, 50, 60, 55, 70, 70, 55]
+    };
+
+    var dataset_03 = {
+        label: "datasets 02",
+        backgroundColor: gradient,
+        borderColor: "rgba(0,0,0,0)",
+        pointBorderColor: "rgba(0,0,0,0)",
+        pointRadius: 0,
+        data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+            //data: [55, 70, 60, 70, 55, 50, 60, 55, 70, 70, 55]
+    };
+
+    // Graph data
+    var data = {
+        labels: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"],
+        datasets: [dataset_01]
+    };
+
+    gradient.addColorStop(0, 'rgba(58, 250, 6, 1)');
+    gradient.addColorStop(1, 'rgba(0, 180, 250, 0)');
+
+
+    // Display the first chart
+    var myLineChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+
+    // Add second chart after a delay
+    setTimeout(function() {
+        myLineChart.chart.config.data.datasets.unshift(dataset_02);
+        myLineChart.update();
+    }, 300);
+
+    // Add third chart after a delay
+    setTimeout(function() {
+        myLineChart.chart.config.data.datasets.unshift(dataset_03);
+        myLineChart.update();
+    }, 600);
+
+    // END CHART JS
+
+    $(document).ready(function() {
+
+        //header switch
+        $('input[type=radio][name=switch]').change(function() {
+
+            myLineChart.chart.config.data.datasets.forEach(function(dataset) {
+
+                dataset.data = dataset.data.map(function() {
+                    return randomScalingFactor();
+                });
+
+            });
+            myLineChart.update();
+
+            var easingFn = function(t, b, c, d) {
+                var ts = (t /= d) * t;
+                var tc = ts * t;
+                return b + c * (tc * ts + -5 * ts * ts + 10 * tc + -10 * ts + 5 * t);
+            }
+
+            var countoptions = {  
+                useEasing: true,
+                easingFn: easingFn,
+                  useGrouping: true,
+                  separator: ',',
+                  decimal: ',',
+                  prefix: '',
+                  suffix: ''
+            };
+
+            var firstNumber = jQuery("#firstNr").attr("rel");
+            var firstNr = new CountUp("firstNr", firstNumber, 0, 1, 2, countoptions);
+
+            var secondNumber = jQuery("#secondNr").attr("rel");
+            var secondNr = new CountUp("secondNr", secondNumber, 0, 1, 2, countoptions);
+
+            var thirdNumber = jQuery("#thirdNr").attr("rel");
+            var thirdNr = new CountUp("thirdNr", thirdNumber, 0, 0, 2, countoptions);
+
+            var fourthNumber = jQuery("#fourthNr").attr("rel");
+            var fourthNr = new CountUp("fourthNr", fourthNumber, 0, 0, 2, countoptions);
+
+            if (this.value == '2015') {
+                newFirstNumber = 6.2;
+                newSecondNumber = 6.8;
+                newThirdNumber = 71;
+                newfourthNumber = 56;
+            } else if (this.value == '2016') {
+                newFirstNumber = 5.2;
+                newSecondNumber = 9.8;
+                newThirdNumber = 85;
+                newfourthNumber = 87;
+            } else if (this.value == '2017') {
+                newFirstNumber = 8.6;
+                newSecondNumber = 8.2;
+                newThirdNumber = 90;
+                newfourthNumber = 95;
+            }
+            jQuery("#firstNr").attr("rel", newFirstNumber);
+            jQuery("#secondNr").attr("rel", newSecondNumber);
+            jQuery("#thirdNr").attr("rel", newThirdNumber);
+            jQuery("#fourthNr").attr("rel", newfourthNumber);
+
+            firstNr.update(newFirstNumber);
+            secondNr.update(newSecondNumber);
+            thirdNr.update(newThirdNumber);
+            fourthNr.update(newfourthNumber);
+
+        });
+
+    });
 </script>
